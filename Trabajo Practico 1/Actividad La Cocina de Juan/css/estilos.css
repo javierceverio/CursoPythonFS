@@ -10,7 +10,7 @@ h1 {
 }
 
 body {
-    margin: 50px;
+    margin: 10px;
 }
 
 .alturaBody {
@@ -18,12 +18,10 @@ body {
 }
 
 .fotoReceta {
-    padding-left: 31%;
     height: 200px;
 }
 
 .fotoAlimentos {
-    padding-left: 32%;
     height: 150px;
 }
 
@@ -31,7 +29,7 @@ header, footer {
     background-color: orange;
 }
 
-footer p {
+footer {
     text-align: center;
     padding: 15px;
 }
