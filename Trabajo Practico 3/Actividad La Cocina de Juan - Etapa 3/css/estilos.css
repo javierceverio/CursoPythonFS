@@ -19,10 +19,14 @@ body {
 
 .fotoReceta {
     height: 200px;
+    display: block;
+    margin: auto;
 }
 
 .fotoAlimentos {
     height: 150px;
+    display: block;
+    margin: auto;
 }
 
 header, footer {
