@@ -1,0 +1,53 @@
+button {
+    background-color: chocolate;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav a, main a {
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    margin: 10px;
+}
+
+main {
+    min-height: 300px;
+}
+
+.fotoReceta {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.fotoAlimentos {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+header, footer {
+    background-color: black;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
