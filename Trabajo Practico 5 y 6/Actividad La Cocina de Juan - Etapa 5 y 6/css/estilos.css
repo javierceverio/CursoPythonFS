@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
 
 button {
     background-color: chocolate;
@@ -166,6 +167,30 @@ input {
     background-color: teal;
 }
 
+.cajaPrincipal {
+    display: grid;
+    grid-template-columns: 66% 34%;
+}
+
+.caja1, .caja2, .caja3 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+}
+
+.caja1, .caja3 {
+    background-color: rgba(199, 185, 185, 0.4);
+}
+
+.cajaSecundaria {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#imagenPrincipal {
+    height: 240px;
+}
+
 @media screen and (max-width: 1280px) {
     .fotosClientes {
         grid-template-areas: "img img" "img img" "img img";
@@ -181,6 +206,10 @@ input {
 
     form {
         max-width: 70%;
+    }
+
+    .cajaPrincipal {
+        display: block;
     }
 }
 
@@ -215,6 +244,10 @@ input {
 
     form {
         max-width: 85%;
+    }
+
+    .cajaSecundaria {
+        display: block;
     }
 }
 
