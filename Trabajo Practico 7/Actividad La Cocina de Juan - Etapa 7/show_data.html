@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informacion</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel=StyleSheet href="css/estilos.css" type="text/css">
+  <script src="https://kit.fontawesome.com/8afb2d248f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <a class="navbar-brand" href="index.html"><img src="images/Logo.png" alt="Logo" id="logo"></a>
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="about.html">Acerca de</a>
+                <a class="nav-item nav-link" href="contact.html">Contacto</a>
+                <a class="nav-item nav-link" href="register.html">Registrarse</a>
+                <a class="nav-item nav-link" href="sucursales.html">Sucursales</a>
+                <a class="nav-item nav-link" href="clientes.html">Nuestros Clientes</a>
+          </div>
+        </div>
+      </nav>
+      <h1>La cocina de Javier</h1>
+</header>
+<p align=center>&nbsp;</p>
+<h3 align=center><font size="+1">Información:</font></h3>
+
+<table border="1" align=center width="226" style="margin-bottom: 30px;">
+  <tr>
+    <th align="center">Form Field</th>
+    <th align="center">Field Value</th>
+  </tr>
+
+<script language="javascript">
+var args = location.search.substr(1).split('&');
+for (var i = 0; i < args.length; ++i) {
+  var parts = args[i].split('=');
+  if (parts != null) {
+    var field = parts[0];
+    var value = parts[1];
+    if (value == null) {
+      value = "null"
+    }
+    else {
+      value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+    }
+
+    document.writeln('<tr><td align="center">' + field + '</td>');
+    document.writeln('<td align="center">' + value + '</td></tr>');
+  }
+}
+</script>
+
+<noscript>
+<tr><td>
+<p>You need to turn on Javascript in your browser.</p>
+
+<p>In Microsoft Internet Explorer 4 or greater:</p>
+<ul>
+<li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+<li>Click on the "Security" tab.</li>
+<li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+and then click on "Settings...".)</li>
+<li>Under "Active scripting" make sure "Enable" is selected.</li>
+</ul>
+
+<p>In Netscape version 4 or greater:</p>
+<ul>
+<li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+<li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+<li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+<li>Click the <b>OK</b> button.</li>
+</ul>
+
+</td></tr>
+</noscript>
+
+</table>
+<footer>
+  <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+  <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <p>Derechos reservados @2020</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
