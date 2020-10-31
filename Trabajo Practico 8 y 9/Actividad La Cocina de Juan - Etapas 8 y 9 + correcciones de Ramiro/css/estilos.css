@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+button {
+    background-color: chocolate;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav a, main a {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    text-decoration: none !important;
+    padding: 5px;
+    border-radius: 5px;
+    border: white 1px dotted;
+}
+
+span {
+    color: rgb(255, 255, 137);
+}
+
+#logo {
+    height: 4rem;
+}
+
+a:hover {
+    border: white 1px solid !important;
+    background-color: teal !important;
+    color: white;
+}
+
+a:hover:active {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    animation: changeColor 2s linear;
+}
+
+h2 {
+    margin-left: 2em;
+}
+
+@keyframes changeColor {
+    from { color: black; }
+    to { color: white; } 
+}
+
+body {
+    margin: 20px 40px;
+    font-family: 'Gayathri', sans-serif;
+    background: linear-gradient(to bottom right, rgb(204, 180, 180), white);
+    background-repeat: no-repeat;
+}
+
+main {
+    min-height: 300px;
+}
+
+.fotoReceta {
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+
+.fotoSola {
+    position: absolute;
+    top: 10rem;
+    right: 3rem;
+}
+
+.fotoAlimentos {
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.fotoNosotros {
+    display: block;
+    margin: 3em auto 3em;
+}
+
+header, footer {
+    background-color: black;
+    border-radius: 10px;
+}
+
+img {
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+footer a {
+    color: white;
+    margin: 0px 5px;
+}
+
+footer a:hover {
+    color: gray;
+    background-color: black;
+    border: none;
+}
+
+form {
+    background-color: rgb(235, 235, 235);
+    max-width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1%;
+    padding: 2rem;
+}
+
+input {
+    margin: 5px;
+    border-radius: 5px;
+    min-height: 2rem;
+}
+
+.fotosClientes {
+    display: grid;
+    grid-template-areas: "img img img" "img img img";
+    justify-content: center;
+    margin: 1rem auto;
+    grid-gap: 1rem;
+}
+
+.linkMapa {
+    font-size: small;
+    background-color: black;    
+}
+
+.mapas {
+    display: grid;
+    grid-template-areas: "i i i i";
+    justify-content: center;
+    grid-gap: 1rem;
+}
+
+.fotosClientes img{
+    max-height: 12rem;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.caja {
+    border: black solid 1px;
+    border-radius: 10px;
+    text-align: center;
+    /* height: 19em; // Para poner el Boton de Receta dentro del recuadro*/ 
+}
+
+.caja img {
+    margin-bottom: 10px;
+}
+
+.caja a {
+    background-color: rgb(88, 59, 76);
+}
+
+.caja a:hover {
+    border: black solid 1px;
+    background-color: teal;
+}
+
+.cajaPrincipal {
+    display: grid;
+    grid-template-columns: 66% 34%;
+}
+
+.caja1, .caja2, .caja3 {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+}
+
+.caja1, .caja3 {
+    background-color: rgba(199, 185, 185, 0.4);
+}
+
+.cajaSecundaria {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#imagenPrincipal {
+    height: 240px;
+}
+
+@media screen and (max-width: 1280px) {
+    .fotosClientes {
+        grid-template-areas: "img img" "img img" "img img";
+    }
+
+    .mapas {
+        grid-template-areas: "i i" "i i";
+    }
+
+    .contenedor {
+        grid-template-columns: 45% 45%;
+    }
+
+    form {
+        max-width: 70%;
+    }
+
+    .cajaPrincipal {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .fotoSola {
+        top: 20rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .fotosClientes {
+        grid-template-areas: "img";
+    }
+
+    body {
+        margin: 0px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-areas: "a a a";
+        grid-gap: 5px;
+    }
+
+    .mapas {
+        grid-template-areas: "i";
+    }
+
+    .contenedor {
+        grid-template-columns: 90%;
+    }
+
+    form {
+        max-width: 85%;
+    }
+
+    .cajaSecundaria {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .fotoSola {
+        position: static;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    .linkMapa {
+        display: block;
+    }
+}

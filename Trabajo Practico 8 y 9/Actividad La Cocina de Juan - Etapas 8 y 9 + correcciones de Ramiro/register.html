@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrese</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel=StyleSheet href="css/estilos.css" type="text/css">
+        <script src="https://kit.fontawesome.com/8afb2d248f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header id="idheader">
+            
+        </header>
+        <main>
+            <h2>Formulario de registro</h2>
+            <form action="show_data.html">
+                <label for="firstname">Nombre: </label><input size="30" type="text" name="firstname" placeholder="Ingrese su nombre aqui..." >   <br><br>
+                <label for="lastname">Apellido:</label><input size="30"  type="text" name="lastname" placeholder="Ingrese su apellido aqui...">  <br><br>
+                <label for="street">Direccion:</label><input type="text" name="address" placeholder="Ingrese su dirección aqui..." >  <br><br>
+                <label for="city">Ciudad: </label><input type="text" name="city" value="La Plata" >  <br><br>
+                <label for="zipcode">Código Postal:</label><input type="text" name="zipcode" placeholder="Ingrese su codigo postal aqui..." > <br> <br>
+                <label for="BirthDate">Fecha Nacimiento(mm/dd/yyyy): </label>  <input type="date" name="birthdate" > <br><br>
+                <p>Género:
+                    <input type="radio" name="gender" value="hombre" checked>Hombre
+                    <input type="radio" name="gender" value="Mujer">Mujer
+                    <input type="radio" name="gender" value="Otro"> Otro 
+                </p>
+                <p>Estudios: 
+                    <input type="checkbox" name="estudios" value="Primarios"> Primarios
+                    <input type="checkbox" name="estudios" value="Secundarios" > Secundarios
+                    <input type="checkbox" name="estudios" value="Terciarios" > Terciarios
+                    <input type="checkbox" name="estudios" value="Universitarios" > Universitarios
+                    <input type="checkbox" name="estudios" value="Otros" > Otros
+                </p>
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+        <footer id="idfooter">
+            
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
